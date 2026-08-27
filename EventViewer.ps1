@@ -21,4 +21,4 @@ $filter =@{
     StartTime = (Get-Date).AddHours(-24)
 }
 
-Get-WinEvent -FilterHashtable $myHashTable -MaxEvents 10
+Get-WinEvent -FilterHashtable $filter -MaxEvents 10
